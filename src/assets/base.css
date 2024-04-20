@@ -25,8 +25,6 @@
   --section-gap: 160px;
 }
 
-/* semantic color variables for this project */
-
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);

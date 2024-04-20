@@ -121,8 +121,8 @@ importers:
         specifier: ^2.0.11
         version: 2.0.13(typescript@5.4.5)
       zx:
-        specifier: 7.2.0
-        version: 7.2.0
+        specifier: 7.2.3
+        version: 7.2.3
 
 packages:
 
@@ -969,8 +969,8 @@ packages:
   '@types/tough-cookie@4.0.5':
     resolution: {integrity: sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==}
 
-  '@types/which@2.0.2':
-    resolution: {integrity: sha512-113D3mDkZDjo+EeUEHCFy0qniNc1ZpecGiAU7WSo7YDoSzolZIQKpYFHrPpjkB2nuyahcKfrmLXeQlh7gqJYdw==}
+  '@types/which@3.0.3':
+    resolution: {integrity: sha512-2C1+XoY0huExTbs8MQv1DuS5FS86+SEjdM9F/+GS61gg5Hqbtj8ZiDSx8MfWcyei907fIPbfPGCOrNUTnVHY1g==}
 
   '@typescript-eslint/eslint-plugin@7.7.0':
     resolution: {integrity: sha512-GJWR0YnfrKnsRoluVO3PRb9r5aMZriiMMM/RHj5nnTrBy1/wIgk76XCtCKcnXGjpZQJQRFtGV9/0JJ6n30uwpQ==}
@@ -2058,6 +2058,10 @@ packages:
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
+  fx@34.0.0:
+    resolution: {integrity: sha512-/fZih3/WLsrtlaj2mahjWxAmyuikmcl3D5kKPqLtFmEilLsy9wp0+/vEmfvYXXhwJc+ajtCFDCf+yttXmPMHSQ==}
+    hasBin: true
+
   gensequence@5.0.2:
     resolution: {integrity: sha512-JlKEZnFc6neaeSVlkzBGGgkIoIaSxMgvdamRoPN8r3ozm2r9dusqxeKqYQ7lhzmj2UhFQP8nkyfCaiLQxiLrDA==}
     engines: {node: '>=14'}
@@ -2707,8 +2711,8 @@ packages:
       encoding:
         optional: true
 
-  node-fetch@3.2.10:
-    resolution: {integrity: sha512-MhuzNwdURnZ1Cp4XTazr69K0BTizsBroX7Zx3UgDSVcZYKF/6p0CBe4EUb/hLqmzVhl0UpYfgRljQ4yxE+iCxA==}
+  node-fetch@3.3.1:
+    resolution: {integrity: sha512-cRVc/kyto/7E5shrWca1Wsea4y6tL9iYJE5FBCius3JQfb/4P4I295PfhgbJQBLTx6lATE4z+wK0rPM4VS2uow==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   node-releases@2.0.14:
@@ -3795,8 +3799,8 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
 
-  zx@7.2.0:
-    resolution: {integrity: sha512-SMuOZ21zFnBxicw+WMtTv3z3eERh6KBtZExAJaL8EAV+Ev/3M1NIAOkrZ8kRfCzD9acv9heUH/WZctTR4vQxBQ==}
+  zx@7.2.3:
+    resolution: {integrity: sha512-QODu38nLlYXg/B/Gw7ZKiZrvPkEsjPN3LQ5JFXM7h0JvwhEdPNNl+4Ao1y4+o3CLNiDUNcwzQYZ4/Ko7kKzCMA==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
 
@@ -4644,7 +4648,7 @@ snapshots:
 
   '@types/tough-cookie@4.0.5': {}
 
-  '@types/which@2.0.2': {}
+  '@types/which@3.0.3': {}
 
   '@typescript-eslint/eslint-plugin@7.7.0(@typescript-eslint/parser@7.7.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':
     dependencies:
@@ -5915,6 +5919,8 @@ snapshots:
 
   function-bind@1.1.2: {}
 
+  fx@34.0.0: {}
+
   gensequence@5.0.2: {}
 
   gensync@1.0.0-beta.2: {}
@@ -6525,7 +6531,7 @@ snapshots:
     dependencies:
       whatwg-url: 5.0.0
 
-  node-fetch@3.2.10:
+  node-fetch@3.3.1:
     dependencies:
       data-uri-to-buffer: 4.0.1
       fetch-blob: 3.2.0
@@ -7608,18 +7614,19 @@ snapshots:
 
   yocto-queue@1.0.0: {}
 
-  zx@7.2.0:
+  zx@7.2.3:
     dependencies:
       '@types/fs-extra': 11.0.4
       '@types/minimist': 1.2.5
       '@types/node': 18.19.31
       '@types/ps-tree': 1.1.6
-      '@types/which': 2.0.2
+      '@types/which': 3.0.3
       chalk: 5.3.0
       fs-extra: 11.2.0
+      fx: 34.0.0
       globby: 13.2.2
       minimist: 1.2.8
-      node-fetch: 3.2.10
+      node-fetch: 3.3.1
       ps-tree: 1.2.0
       webpod: 0.0.2
       which: 3.0.1

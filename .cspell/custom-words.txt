@@ -1,8 +1,10 @@
 byecode
 commitlint
 nightwatch
+optimizelegibility
 pinia
 rushstack
 tsbuildinfo
 tsno
 Vite
+vuejs

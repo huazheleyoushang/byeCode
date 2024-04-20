@@ -2,7 +2,6 @@
   "name": "byecode",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -17,8 +16,7 @@
     "lint": "run-p lint:stage type-check spellcheck",
     "prepare": "husky install",
     "lint:stage": "lint-staged",
-    "commit": "git-cz",
-    "commitlint": "commitlint --edit"
+    "commit": "git-cz"
   },
   "lint-staged": {
     "*.{html,vue,css,sass,scss,ts}": "prettier --write",
@@ -69,7 +67,7 @@
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
     "cz-git": "1.7.0",
-    "zx": "7.2.0",
+    "zx": "7.2.3",
     "tsno": "2.0.0"
   }
 }
