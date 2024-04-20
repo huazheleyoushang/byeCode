@@ -17,7 +17,7 @@
     "lint": "run-p lint:stage type-check spellcheck",
     "prepare": "husky install",
     "lint:stage": "lint-staged",
-    "commit": "cz-git",
+    "commit": "git-cz",
     "commitlint": "commitlint --edit"
   },
   "lint-staged": {
