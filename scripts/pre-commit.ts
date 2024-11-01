@@ -4,8 +4,7 @@ import { $ } from 'zx'
 
 console.log('开始执行代码质量评估...\n')
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-await import('./check').catch((out) => {
+await import('./check').catch(() => {
   throw new Error('代码质量评估失败, 请检查代码')
 })
 
